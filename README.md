@@ -67,6 +67,11 @@
 								state => ({key:value}), //映射状态
 								{key:xxxxxAction} //映射操作状态的方法
 							)(UI组件)
-							
+		
+
+
+
+
+
 		
 		
