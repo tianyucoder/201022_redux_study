@@ -19,7 +19,7 @@ class Count extends Component {
 		// console.log('UI--render')
 		return (
 			<div>
-				<h2>当前求和为：{this.props.sum}</h2>
+				<h2>当前求和为：{this.props.sum.he}</h2>
 				<h4>今天：{this.state.wind}</h4>
 				<select ref={c => this.selectNumber = c}>
 					<option value="1">1</option>
@@ -71,8 +71,8 @@ class Count extends Component {
 
 //利用connect生成Count的容器组件，并暴露
 export default connect(
-	//映射状态
-	state => ({sum:state}), 
+	//映射状态（特别注意，此处的state是redux中的总state）
+	state => ({sum:state.he}), 
 	//映射操作状态的方法
 	{
 		jia:createIncrementAction,
