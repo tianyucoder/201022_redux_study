@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script type="text/javascript" >
+			/* 
+				什么数据类型可以解构赋值呢？ 对象、数组
+			*/
+
+			//一、对象的解构赋值
+			const obj = {x:1,y:2}
+			const {x,y} = obj 
+			// 第15行代码，等价于第17行和18行
+			// const x = obj.x
+			// const y = obj.y
+
+			//二、解构赋值配合函数接参
+			function demo({x}){
+				// console.log(x)
+				return x+9
+			}
+			const result = demo(obj)
+			// console.log(result)
+
+			//三、解构赋值的连续写法+重命名
+			const person = {
+				name:'老刘',
+				phone:{
+					p1:'iphone12ProMax',
+					p2:'Mate40Pro',
+				}
+			}
+			const {phone:{p1:shouji1,p2:shouji2}} = person
+
+
+			//四、解构赋值用于数组
+			const arr = [1,2,3]
+			// const [a,b,c] = arr
+
+			const [,,a] = arr
+			console.log(a)
+
+		</script>
+	</body>
+</html>
