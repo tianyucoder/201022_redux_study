@@ -5,7 +5,7 @@
 	会收到，之前的状态(preState) 、动作对象(action)
 	根据action中的type和data决定如何加工数据
 */
-import {INCREMENT,DECREMENT} from './constant'
+import {INCREMENT,DECREMENT} from '../constant'
 const initState = 0 //初始化状态
 
 export default function countReducer(preState=initState,action){

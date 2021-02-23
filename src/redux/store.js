@@ -4,7 +4,7 @@
 import {createStore,applyMiddleware} from 'redux'
 
 //引入count_reducer
-import countReducer from './count_reducer'
+import countReducer from './reducers/count'
 
 //引入redux-thunk专门用于与处理函数类型的action（异步action）
 import thunk from 'redux-thunk'

@@ -6,7 +6,7 @@ import {
 	createIncrementAction,
 	createDecrementAction,
 	createWaitIncrementAction
-} from '../../redux/count_action'
+} from '../../redux/actions/count'
 
 
 //定义Count的UI组件，在该组件中不能使用任何redux的API
@@ -16,7 +16,7 @@ class Count extends Component {
 	}
 
 	render() {
-		console.log('UI--render')
+		// console.log('UI--render')
 		return (
 			<div>
 				<h2>当前求和为：{this.props.sum}</h2>
