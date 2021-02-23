@@ -9,6 +9,9 @@ export default function personReducer (preState=initState,action){
 	switch (type) {
 		//如果是添加一个人
 		case ADD_PERSON:
+			// preState.unshift(data)
+			// console.log('%%%%%$$$$$',preState)
+			// return preState
 			return [data,...preState]
 		//如果是初始化
 		default:

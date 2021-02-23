@@ -81,6 +81,9 @@
 					import {composeWithDevTools} from 'redux-devtools-extension'
 					const store = createStore(allReducer,composeWithDevTools(applyMiddleware(thunk)))
 
+## 10.最终版
+			(1).尽量让所有的变量名标准化
+			(2).尽可能的从语法上触发简写形式
 
 
 
